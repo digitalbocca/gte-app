@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gerador de Tags Exclusivas</title>
+  <link rel="stylesheet" href="css/simple-grid.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Gerador de Tags Exclusivas</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <p>Coloque um Identificador:</p>
+        <p>
+          <input id="exclusividade" type="text" placeholder="Ex: 'EDB2017' - Sem Espaços">
+        </p>
+        <p><button id="gerarTag">GERAR</button></p>
+      </div>
+      <div class="col-6">
+        <p>Tag Exclusiva:</p>
+        <p id="tagGerada">Faça a Geração ao Lado</p>
+      </div>
+    </div>
+  </div>
+  <script
+			  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+        crossorigin="anonymous">
+  </script>
+  <script>
+    $(document).ready(function(){
+      $('#gerarTag').on('click', function(){
+        var dinamico = Date.now();
+        var hashBase64 = btoa(dinamico);
+        console.log(hashBase64);
+        if (hashBase64.length > 10) {
+          hashBase64 = hashBase64.substr(-10);
+        }
+        // console.log(hashBase64);
+        var primeiraParte = hashBase64.substring(0, 5);
+        // console.log(primeiraParte);
+        var segundaParte = hashBase64.substring(5,10);
+        // console.log(segundaParte);
+
+        var exclusividade = $('#exclusividade').val();
+        var exSemEspacos = exclusividade.split(' ').join('').toUpperCase();
+
+        var tagConcatenada = primeiraParte + exSemEspacos + segundaParte;
+
+        // console.log(tagConcatenada);
+
+        $('#tagGerada').text(tagConcatenada);
+
+        // alert('Seu Tio');
+      });
+    });
+  </script>
+</body>
+</html>
