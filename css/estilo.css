@@ -2,6 +2,74 @@
  * (c)2017 - Estúdio Digital Bocca
  */
 
-button:hover{
+button{
   cursor: pointer;
+  background-color: #fff;
+}
+
+.edb-input{
+  border: 2px solid #c0392b;
+  border-radius: 4px;
+  padding: 1rem;
+  color: #c0392b;
+}
+
+.edb-input:focus{
+  border: 2px solid #c00000;
+  border-radius: 4px;
+  padding: 1rem;
+  color: #c00000;
+}
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #DD7676 !important;
+}
+
+input::-moz-placeholder { /* Firefox 19+ */
+  color: #DD7676 !important;
+}
+
+input:-ms-input-placeholder { /* IE 10+ */
+  color: #DD7676 !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+  color: #DD7676 !important;
+}
+
+.edb
+
+.edb-pome{
+  color: #c0392b;
+}
+
+.edb-fundo-mulher{
+  position: relative;
+  min-height: 18rem;
+}
+
+.edb-bold{
+  font-weight: bold;
+}
+
+.edb-gradient{
+  background-color: #FF3CAC;
+  background-image: -webkit-linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  background-image: -moz-linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  background-image: -o-linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+}
+
+.edb-branco{
+  color: #fff;
+  text-shadow: 0.08rem 0.08rem 0.08rem rgba(8, 8, 8, 0.4);
+  font-size: 7rem;
+}
+
+.edb-cursor-pointer{
+  cursor: pointer;
+}
+
+.edb-logo-face{
+  font-family: 'Kaushan Script', cursive;
 }

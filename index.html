@@ -5,27 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Gerador de Tags Exclusivas</title>
-  <link rel="stylesheet" href="css/simple-grid.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet"> 
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h1>Gerador de Tags Exclusivas</h1>
+  <div class="container-fluid text-center edb-gradient">
+    <div class="row edb-fundo-mulher">
+      <div class="col-12 text-center d-flex align-items-center justify-content-center">
+        <h1 class="edb-branco edb-logo-face">Gerador de Tags</h1>
       </div>
     </div>
-    <div class="row">
-      <div class="col-6">
-        <p>Coloque um Identificador:</p>
-        <p>
-          <input id="exclusividade" type="text" placeholder="Ex: 'EDB2017' - Sem Espaços">
-        </p>
-        <p><button id="gerarTag">GERAR</button></p>
+  </div>
+  <div class="container">
+    <div class="row pt-5">
+      <div class="col text-center">
+        <p>Anúncio</p>
+        <img src="http://lorempixel.com/900/120/cats" alt="">
       </div>
-      <div class="col-6">
+    </div>
+    <div class="row pt-5">
+      <div class="col-sm-12 col-md-9 col-lg-6">
+        <h1 class="edb-pome">Gerador de Tags Exclusivas</h1>
+        <p>Este é um Gerador de tags exclusivas para vídeos no YouTube.</p>
+        <p>Coloque um identificador exclusivo. Ex: Seu Nome.</p>
+        <p>Clique no Botão GERAR.</p>
+        <p>Copie a tag exclusiva e coloque nas tags de todos os seus vídeos.</p>
+      </div>
+      <div class="col-sm-12 col-md-3 col-lg-6 text-center">
+        <p>Anúncio</p>
+        <img src="http://lorempixel.com/300/300/cats" alt="">
+      </div>
+    </div>
+    <div class="row pt-5">
+      <div class="col-sm-12 col-md-12 col-lg-6">
+        <div class="form-group">
+          <input type="text" class="form-control edb-input edb-bold" id="exclusividade" placeholder="Ex: 'EDB2017'">
+        </div>
+        <div class="form-group">
+          <button class="edb-input edb-bold btn-block" id="gerarTag">GERAR</button>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-6">
         <p>Tag Exclusiva:</p>
-        <p id="tagGerada">Faça a Geração ao Lado</p>
+        <p id="tagGerada" class="edb-pome edb-bold">Faça a Geração</p>
       </div>
     </div>
   </div>
@@ -39,26 +62,23 @@
       $('#gerarTag').on('click', function(){
         var dinamico = Date.now();
         var hashBase64 = btoa(dinamico);
-        console.log(hashBase64);
+        //console.log(hashBase64);
         if (hashBase64.length > 10) {
           hashBase64 = hashBase64.substr(-10);
         }
-        // console.log(hashBase64);
         var primeiraParte = hashBase64.substring(0, 5);
-        // console.log(primeiraParte);
         var segundaParte = hashBase64.substring(5,10);
-        // console.log(segundaParte);
 
-        var exclusividade = $('#exclusividade').val();
+        var exclusividade = btoa($('#exclusividade').val());
         var exSemEspacos = exclusividade.split(' ').join('').toUpperCase();
+        var algInsert = (dinamico * 344590).toString().substr(-10).substring(0, 5);
+        console.log(algInsert);
 
-        var tagConcatenada = primeiraParte + exSemEspacos + segundaParte;
+        var tagConcatenada = algInsert + primeiraParte + algInsert + exSemEspacos + algInsert + segundaParte + algInsert;
 
-        // console.log(tagConcatenada);
+        $('#tagGerada').text(btoa(tagConcatenada));
+        $('#exclusividade').val('');
 
-        $('#tagGerada').text(tagConcatenada);
-
-        // alert('Seu Tio');
       });
     });
   </script>
