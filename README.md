@@ -1,7 +1,10 @@
 # Estúdio Digital Bocca #
 ## GERADOR DE TAGS EXCLUSIVAS ##
+### v0.4.1 ###
 
-## v0.4.0 ##
+**Notas da Versão v0.4.1**
+
+- Adicionado wedeploy.json
 
 **Notas da Versão v0.4.0**
 
