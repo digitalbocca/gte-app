@@ -11,7 +11,7 @@
 </head>
 <body>
   <div class="container-fluid text-center edb-gradient">
-    <div class="row edb-fundo-mulher">
+    <div class="row edb-fundo-grd">
       <div class="col-12 text-center d-flex align-items-center justify-content-center">
         <h1 class="edb-branco edb-logo-face">Gerador de Tags</h1>
       </div>
@@ -26,9 +26,8 @@
     </div>
     <div class="row pt-5">
       <div class="col-sm-12 col-md-9 col-lg-6">
-        <h1 class="edb-pome">Gerador de Tags Exclusivas</h1>
-        <p>Este é um Gerador de tags exclusivas para vídeos no YouTube.</p>
-        <p>Coloque um identificador exclusivo. Ex: Seu Nome.</p>
+        <h1 class="display-6">Gerador de Tags Exclusivas</h1>
+        <p class="pt-5">Este é um Gerador de tags exclusivas para vídeos no YouTube.</p>
         <p>Clique no Botão GERAR.</p>
         <p>Copie a tag exclusiva e coloque nas tags de todos os seus vídeos.</p>
       </div>
@@ -38,47 +37,40 @@
       </div>
     </div>
     <div class="row pt-5">
-      <div class="col-sm-12 col-md-12 col-lg-6">
-        <div class="form-group">
-          <input type="text" class="form-control edb-input edb-bold" id="exclusividade" placeholder="Ex: 'EDB2017'">
-        </div>
-        <div class="form-group">
-          <button class="edb-input edb-bold btn-block" id="gerarTag">GERAR</button>
-        </div>
+      <div class="col-sm-12">
+        <button class="btn btn-success btn-block" id="gerarTag">GERAR</button>
+        <h1 class="text-center display-2 pt-5">Sua Tag Excluviva:</h2>
+        <h3 id="tagGerada" class="text-center pt-5">Utilize o Botão</h3>
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-6">
-        <p>Tag Exclusiva:</p>
-        <p id="tagGerada" class="edb-pome edb-bold">Faça a Geração</p>
+    </div>
+    <div class="row pt-5">
+      <div class="col text-center">
+        <p>Anúncio</p>
+        <img src="http://lorempixel.com/900/120/cats" alt="">
+      </div>
+    </div>
+    <div class="row pt-5">
+      <div class="col text-center">
+        <p>&nbsp;</p>
       </div>
     </div>
   </div>
-  <script
-			  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-			  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-        crossorigin="anonymous">
-  </script>
+  <div class="container-fluid text-center edb-gradient">
+    <div class="row edb-fundo-gradient">
+      <div class="col-12 text-center d-flex align-items-center justify-content-center">
+        <p class="edb-br">(c)2017 - Estúdio Digital Bocca - <a href="https://estudiodigitalbocca.com.br">estudiodigitalbocca.com.br</a></p>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
   <script>
     $(document).ready(function(){
       $('#gerarTag').on('click', function(){
-        var dinamico = Date.now();
-        var hashBase64 = btoa(dinamico);
-        //console.log(hashBase64);
-        if (hashBase64.length > 10) {
-          hashBase64 = hashBase64.substr(-10);
-        }
-        var primeiraParte = hashBase64.substring(0, 5);
-        var segundaParte = hashBase64.substring(5,10);
-
-        var exclusividade = btoa($('#exclusividade').val());
-        var exSemEspacos = exclusividade.split(' ').join('').toUpperCase();
-        var algInsert = (dinamico * 344590).toString().substr(-10).substring(0, 5);
-        console.log(algInsert);
-
-        var tagConcatenada = algInsert + primeiraParte + algInsert + exSemEspacos + algInsert + segundaParte + algInsert;
-
-        $('#tagGerada').text(btoa(tagConcatenada));
-        $('#exclusividade').val('');
-
+        $.get('https://api-geradordetags.wedeploy.io', function(data){
+          $('#tagGerada').text(btoa(data.tagExclusiva));
+        });
       });
     });
   </script>
