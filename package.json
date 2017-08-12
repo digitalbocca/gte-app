@@ -1,0 +1,23 @@
+{
+  "name": "geradordetags-producao",
+  "version": "0.3.0-pro",
+  "description": "Gerador de Tags Exclusivas - Frontend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "8.3.0"
+  },
+  "keywords": [
+    "gerador",
+    "tags"
+  ],
+  "author": "Gabriel Bertola Bocca - gabriel@estudiodigitalbocca.com.br",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "serve-static": "^1.12.3"
+  }
+}
