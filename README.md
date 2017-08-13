@@ -1,6 +1,10 @@
 # Estúdio Digital Bocca #
 ## GERADOR DE TAGS EXCLUSIVAS ##
-### v0.5.0 ###
+### v0.6.0 ###
+
+**Notas da Versão v0.6.0**
+
+- Adicionados blocos de anúncios AdSense.
 
 **Notas da Versão v0.5.0**
 
