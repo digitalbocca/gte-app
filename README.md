@@ -1,6 +1,11 @@
 # Estúdio Digital Bocca #
 ## GERADOR DE TAGS EXCLUSIVAS ##
-### v0.4.1 ###
+### v0.5.0 ###
+
+**Notas da Versão v0.5.0**
+
+- Adicionado Certificado do Lets Encrypt.
+- Imagens de Banner EDB Adicionas.
 
 **Notas da Versão v0.4.1**
 
