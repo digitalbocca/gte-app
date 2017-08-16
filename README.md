@@ -1,6 +1,6 @@
 # GTE-APP #
 ## Gerador de Tags Exclusivas - App Frontend ##
-### v0.7.0 ###
+### v0.8.0 ###
 
 Um gerador de tags exclusivas para seu canal no youtube.
 
@@ -46,6 +46,10 @@ https://github.com/wedeploy/letsencrypt
 - Fiz o Deploy. Funcionou !!!
 
 ## CHANGELOG ##
+
+**Notas da Versão v0.8.0**
+
+- Adicionado arquivo privkey.pem do Let's Encrypt.
 
 **Notas da Versão v0.7.0**
 
