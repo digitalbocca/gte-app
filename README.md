@@ -1,6 +1,6 @@
 # GTE-APP #
 ## Gerador de Tags Exclusivas - App Frontend ##
-### v0.8.0 ###
+### v0.9.0 ###
 
 Um gerador de tags exclusivas para seu canal no youtube.
 
@@ -13,6 +13,8 @@ Esta Versão é apenas a APP que consome uma API Geradora da Tag.
 - Crie um Novo Projeto.
 - Altere o nome do Serviço no arquivo `wedeploy.json`.
 - Faça o Deploy: `we deploy -p <seu-projeto>`.
+
+**Ou configure seu deploy automático utilizando o GitHub**
 
 Tudo estará rodando em `<service>-<project>.wedeploy.io`.
 
@@ -36,16 +38,14 @@ https://api-gte.wedeploy.io
 
 ## HTTPS ##
 
-Passo a passo que eu utilizei.
-
-- Utilizei este Gerador para fazer o Certificado no Let's Encrypt:
-https://github.com/wedeploy/letsencrypt
-
-- Utilizei o comando que está no exemplo, alterando apenas as informações pessoais.
-- Copiei o arquivo `privkey.pem` para a raiz do meu projeto local (Mesmo nível do wedeploy.json).
-- Fiz o Deploy. Funcionou !!!
+- Gerado Automaticamente pelo WeDeploy.
 
 ## CHANGELOG ##
+
+**Notas da Versão v0.9.0**
+
+- Alterações no README.
+- Removido privkey.pem do Let's Encrypt.
 
 **Notas da Versão v0.8.0**
 
