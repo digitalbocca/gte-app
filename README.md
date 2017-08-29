@@ -1,6 +1,6 @@
 # GTE-APP #
 ## Gerador de Tags Exclusivas - App Frontend ##
-### v0.9.0 ###
+### v0.10.0 ###
 
 Um gerador de tags exclusivas para seu canal no youtube.
 
@@ -41,6 +41,16 @@ https://api-gte.wedeploy.io
 - Gerado Automaticamente pelo WeDeploy.
 
 ## CHANGELOG ##
+
+**Notas da Versão v0.10.0**
+
+- Automatizado o Controle de Versão.
+- Adicionado GitHub Corners.
+- Adicionado env PORT no arquivo wedeploy.json.
+- Correção no Layout.
+- Espaço reservado para publicidade mostra uma imagem.
+- Trocada a fonte do topo.
+- Bootstrap atualizado para v4.0.0-beta.
 
 **Notas da Versão v0.9.0**
 

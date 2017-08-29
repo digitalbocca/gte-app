@@ -1,14 +1,24 @@
 {
   "name": "geradordetags-producao",
-  "version": "0.3.0-pro",
+  "version": "0.10.0",
   "description": "Gerador de Tags Exclusivas - Frontend",
   "main": "server.js",
+  "config": {
+    "commitMessage": "Automatização do Controle de Versão"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "dev": "http-server public -o",
+    "start": "node server.js",
+    "git": "npm run gitstatus && npm run gitadd && npm run gitcommit && npm run gittag && npm run gitpushorigin && npm run gitpushbitbucket",
+    "gitstatus": "git status",
+    "gitadd": "git add .",
+    "gitcommit": "git commit -m \"%npm_package_config_commitMessage%\"",
+    "gittag": "git tag v%npm_package_version%",
+    "gitpushorigin" : "git push origin master --tags",
+    "gitpushbitbucket" : "git push bitbucket master --tags"
   },
   "engines": {
-    "node": "8.3.0"
+    "node": "8.4.0"
   },
   "keywords": [
     "gerador",

@@ -1,5 +1,19 @@
 /**
  * (c)2017 - Estúdio Digital Bocca
+ *
+ * estilo.css - Parte do Projeto digitalbocca/gte-app
+ * https://github.com/digitalbocca/gte-app
+ *
+ * Exemplo: https://gte.wedeploy.io
+ *          https://app-gte.wedeploy.io
+ *          https://gte-app.ga
+ *
+ * Dependências:
+ *
+ * Paletas de Gradiente por: http://uigradients.com
+ * GitHub Corners por: http://tholman.com/github-corners/
+ * jQuery: http://jquery.com
+ * Bootstrap: https://getbootstrap.com/
  */
 
 .edb-fundo-grd{
@@ -39,9 +53,12 @@
 }
 
 .edb-logo-face{
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'Satisfy', cursive;
 }
 
 .edb-br>a:active, .edb-br>a:hover, .edb-br>a:visited{
   color: #fff !important;
 }
+
+/* Código do GitHub Corners */
+.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
