@@ -1,10 +1,10 @@
 {
   "name": "geradordetags-producao",
-  "version": "0.12.1",
+  "version": "0.13.0",
   "description": "Gerador de Tags Exclusivas - Frontend",
   "main": "server.js",
   "config": {
-    "commitMessage": "Correção na Porta"
+    "commitMessage": "Automatizado o Deploy"
   },
   "scripts": {
     "dev": "http-server public -o",
@@ -15,7 +15,8 @@
     "gitcommit": "git commit -m \"%npm_package_config_commitMessage%\"",
     "gittag": "git tag v%npm_package_version%",
     "gitpushorigin": "git push origin master --tags",
-    "gitpushbitbucket": "git push bitbucket master --tags"
+    "gitpushbitbucket": "git push bitbucket master --tags",
+    "deploy": "we deploy -p gte -v"
   },
   "engines": {
     "node": "8.9.0"
