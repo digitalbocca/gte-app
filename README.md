@@ -1,6 +1,6 @@
 # GTE-APP #
 ## Gerador de Tags Exclusivas - App Frontend ##
-### v0.13.0 ###
+### v0.14.0 ###
 
 Um gerador de tags exclusivas para seu canal no YouTube.
 
