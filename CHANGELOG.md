@@ -1,6 +1,10 @@
 # GTE-APP #
 ## Gerador de Tags Exclusivas - App Frontend ##
-### v0.12.0 ###
+### v0.12.1 ###
+
+**Notas da Versão v0.12.1**
+
+- Correção na Porta.
 
 **Notas da Versão v0.12.0**
 

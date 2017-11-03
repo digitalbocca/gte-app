@@ -35,6 +35,6 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
-// app.listen(process.env.PORT)
+// app.listen(3000)
 
-app.listen(3000)
+app.listen(process.env.PORT)

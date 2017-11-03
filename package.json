@@ -1,10 +1,10 @@
 {
   "name": "geradordetags-producao",
-  "version": "0.12.0",
+  "version": "0.12.1",
   "description": "Gerador de Tags Exclusivas - Frontend",
   "main": "server.js",
   "config": {
-    "commitMessage": "Removido server-static"
+    "commitMessage": "Correção na Porta"
   },
   "scripts": {
     "dev": "http-server public -o",
