@@ -1,6 +1,6 @@
 # GTE-APP #
 ## Gerador de Tags Exclusivas - App Frontend ##
-### v0.11.0 ###
+### v0.12.0 ###
 
 Um gerador de tags exclusivas para seu canal no YouTube.
 
@@ -28,7 +28,7 @@ https://gte-app.ga
 
 ## API QUE É UTILIZADA ##
 
-https://api-gte.wedeploy.io
+https://api-geradordetags.wedeploy.io
 
 ## DOMÍNIO PERSONALIZADO ##
 

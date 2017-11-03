@@ -1,6 +1,13 @@
 # GTE-APP #
 ## Gerador de Tags Exclusivas - App Frontend ##
-### v0.11.0 ###
+### v0.12.0 ###
+
+**Notas da Versão v0.12.0**
+
+- Utilizando Template engine Pug.
+- Trocada API para api.geradordetagsexclusivas.wedeploy.io
+- Removido server-static.
+- Engine do Node atualizada para 8.9.0.
 
 **Notas da Versão v0.11.0**
 

@@ -1,21 +1,40 @@
+'use strict'
+
 /**
- * server.js - Parte do Projeto digitalbocca/gte-app
+ * Gerador de Tags Exclusivas - app
  * https://github.com/digitalbocca/gte-app
  *
  * @see https://gte.wedeploy.io
  * @see https://app-gte.wedeploy.io
  * @see https://gte-app.ga
  *
- * @file Serve os arquivos estáticos para o browser.
+ * @file server.js
+ * @namespace root
+ * @description Serve os arquivos estáticos para o browser.
+ * @since v0.1.0
  *
- * @author Gabriel Bertola Bocca <gabriel@estudiodigitalbocca.com.br>
- * @copyright 2017 - Estúdio Digital Bocca - https://estudiodigitalbocca.com.br
+ * @copyright (c)2017 - Estúdio Digital Bocca - https://estudiodigitalbocca.com.br/
+ * @author Gabriel Bertola Bocca - gabriel at estudiodigitalbocca.com.br
+ *
+ * @version v1.1.0
  */
 
-var express = require('express')
-var serveStatic = require('serve-static')
-var app = express()
+const express = require('express')
+const pug = require('pug')
+const cors = require('cors')
 
-app.use(serveStatic('public', {'index': ['index.html', 'index.htm']}))
-app.listen(process.env.PORT)
-// app.listen(80)
+const app = express()
+
+app.use(cors())
+app.use(express.static(__dirname + '/public'))
+
+app.set('views', './views')
+app.set('view engine', 'pug')
+
+app.get('/', (req, res) => {
+  res.render('index')
+})
+
+// app.listen(process.env.PORT)
+
+app.listen(3000)

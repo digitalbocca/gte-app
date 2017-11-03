@@ -1,0 +1,32 @@
+body
+  .container-fluid.text-center.edb-gradient
+    .row.edb-fundo-grd
+      .col-sm-12.text-center.d-flex.align-items-center.justify-content-center
+        include github-corner.pug
+        h1.edb-branco.edb-logo-face Gerador de Tags
+  .container
+    .row.pt-5
+      .col-sm-12.text-center
+        img.img-fluid(src="images/banner-edb.jpg", alt="Reservado para publicidade")
+    .row.pt-5
+      .col-sm-12.col-md-9.col-lg-6
+        h1.display-6 Gerador de Tags Exclusivas
+        p.pt-5 Este é um Gerador de tags exclusivas para vídeos no YouTube.
+        p Clique no Botão GERAR.
+        p Copie a tag exclusiva e coloque nas tags de todos os seus vídeos.
+      .col-sm-12.col-md-3.col-lg-6.text-center
+        img.img-fluid(src="images/banner-edb-quadrado.jpg", alt="Reservado para publicidade")
+    .row.pt-5
+      .col-sm-12
+        button.btn.btn-success.btn-block#gerarTag GERAR
+        h1.text-center.display-2.pt-5 Sua Tag Exclusiva:
+        h3.text-center.pt-5#tagGerada Utilize o Botão
+    .row.pt-5
+      .col-sm-12.text-center
+        img.img-fluid(src="images/banner-edb.jpg", alt="Reservado para publicidade")
+    .row.pt-5
+      .col-sm-12.text-center
+        p &nbsp;
+  include footer.pug
+  script(src="https://code.jquery.com/jquery-3.2.1.min.js", integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=", crossorigin="anonymous")
+  script(src="js/edb.js")
