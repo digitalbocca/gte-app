@@ -1,13 +1,13 @@
 {
   "name": "geradordetags-producao",
-  "version": "0.14.0",
+  "version": "0.15.0",
   "description": "Gerador de Tags Exclusivas - Frontend",
   "main": "server.js",
   "config": {
-    "commitMessage": "Adicionado servidor de desenvolvimento."
+    "commitMessage": "Trocado jQuery por Zepto"
   },
   "scripts": {
-    "dev": "node dev.js",
+    "dev": "nodemon dev.js",
     "start": "node server.js",
     "git": "npm run gitstatus && npm run gitadd && npm run gitcommit && npm run gittag && npm run gitpushorigin && npm run gitpushbitbucket",
     "gitstatus": "git status",
@@ -19,7 +19,7 @@
     "deploy": "we deploy -p gte -v"
   },
   "engines": {
-    "node": "8.9.0"
+    "node": "8.9.1"
   },
   "keywords": [
     "gerador",

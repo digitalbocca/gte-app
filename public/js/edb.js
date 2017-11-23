@@ -14,13 +14,13 @@
  * @copyright (c)2017 - Estúdio Digital Bocca - https://estudiodigitalbocca.com.br/
  * @author Gabriel Bertola Bocca - gabriel at estudiodigitalbocca.com.br
  *
- * @version v1.0.0
+ * @version v2.0.0
  */
 
-$(document).ready(() => {
+$().ready(() => {
   $('#gerarTag').on('click', () => {
     $.get('https://api-geradordetags.wedeploy.io', data => {
-      $('#tagGerada').text(btoa(data.tagExclusiva))
+      $('#tagGerada').text(btoa(data.dados.tagExclusiva))
     })
   })
 })

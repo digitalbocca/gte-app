@@ -1,10 +1,17 @@
 # GTE-APP #
 ## Gerador de Tags Exclusivas - App Frontend ##
-### v0.14.0 ###
+### v0.15.0 ###
+
+**Notas da Versão v0.15.0**
+
+- Atualização na exibição dos dados da API para o novo padrão.
+- Atualização da engine do node para 8.9.1.
+- Trocado jQuery por Zepto.
+- Adicionada env VER.
 
 **Notas da Versão v0.14.0**
 
-- Adicionado servidor de desenvolvimento..
+- Adicionado servidor de desenvolvimento.
 
 **Notas da Versão v0.13.0**
 
