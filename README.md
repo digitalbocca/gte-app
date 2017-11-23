@@ -1,6 +1,8 @@
 # GTE-APP #
 ## Gerador de Tags Exclusivas - App Frontend ##
-### v0.15.0 ###
+### v0.16.0 ###
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/6acf83274edb76dfe6c7/maintainability)](https://codeclimate.com/github/digitalbocca/gte-app/maintainability)
 
 Um gerador de tags exclusivas para seu canal no YouTube.
 

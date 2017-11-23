@@ -1,6 +1,10 @@
 # GTE-APP #
 ## Gerador de Tags Exclusivas - App Frontend ##
-### v0.15.0 ###
+### v0.16.0 ###
+
+**Notas da Versão v0.16.0**
+
+- Adicionado Badge Code Climate.
 
 **Notas da Versão v0.15.0**
 

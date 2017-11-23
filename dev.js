@@ -16,10 +16,10 @@
  * @copyright (c)2017 - Estúdio Digital Bocca - https://estudiodigitalbocca.com.br/
  * @author Gabriel Bertola Bocca - gabriel at estudiodigitalbocca.com.br
  *
- * @version v1.1.0
+ * @version v1.2.0
  */
 
 process.env.PORT = 8080
-process.env.VER = 'v0.15.0'
+process.env.VER = 'v0.16.0'
 
-require('./server.js')
+require('./server')
