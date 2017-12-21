@@ -1,10 +1,10 @@
 {
   "name": "geradordetags-producao",
-  "version": "0.16.0",
+  "version": "0.17.0",
   "description": "Gerador de Tags Exclusivas - Frontend",
   "main": "server.js",
   "config": {
-    "commitMessage": "Adicionado Badge Code Climate"
+    "commitMessage": "Interpreta a resposta correta da nova API"
   },
   "scripts": {
     "dev": "nodemon dev.js",

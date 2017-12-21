@@ -20,7 +20,7 @@
 $().ready(() => {
   $('#gerarTag').on('click', () => {
     $.get('https://api-geradordetags.wedeploy.io', data => {
-      $('#tagGerada').text(btoa(data.dados.tagExclusiva))
+      $('#tagGerada').text(data.dados.tagExclusiva)
     })
   })
 })
