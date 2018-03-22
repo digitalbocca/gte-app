@@ -13,10 +13,10 @@
  * @description Serve os arquivos estáticos para o browser.
  * @since v0.1.0
  *
- * @copyright (c)2017 - Estúdio Digital Bocca - https://estudiodigitalbocca.com.br/
+ * @copyright (c)2017-2018 Estúdio Digital Bocca - https://estudiodigitalbocca.com.br/
  * @author Gabriel Bertola Bocca - gabriel at estudiodigitalbocca.com.br
  *
- * @version v1.1.0
+ * @version v1.2.0
  */
 
 const express = require('express')
@@ -35,4 +35,6 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
-app.listen(process.env.PORT)
+app.listen(process.env.PORT, () => {
+  console.log('Servidor EDB Iniciado na Porta:', process.env.PORT)
+})
