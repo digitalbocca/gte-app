@@ -1,25 +1,26 @@
 {
   "name": "geradordetags-producao",
-  "version": "0.18.0",
+  "version": "0.19.0",
   "description": "Gerador de Tags Exclusivas - Frontend",
   "main": "server.js",
   "config": {
-    "commitMessage": "Mostra uma mensagem com o número da porta quando inicia o servidor"
+    "commitMessage": "Melhoria no controle de versão automatizado"
   },
   "scripts": {
     "dev": "nodemon dev.js",
     "start": "node server.js",
-    "git": "npm run gitstatus && npm run gitadd && npm run gitcommit && npm run gittag && npm run gitpushorigin && npm run gitpushbitbucket",
-    "gitstatus": "git status",
-    "gitadd": "git add .",
-    "gitcommit": "git commit -m \"%npm_package_config_commitMessage%\"",
-    "gittag": "git tag v%npm_package_version%",
-    "gitpushorigin": "git push origin master --tags",
-    "gitpushbitbucket": "git push bitbucket master --tags",
-    "deploy": "we deploy -p gte -v"
+    "git": "npm run gst && npm run gad && npm run gco && npm run gta && npm run gpo && npm run gpb",
+    "gst": "git status",
+    "gad": "git add .",
+    "gco": "cross-var git commit -m \"$npm_package_config_commitMessage\"",
+    "gta": "cross-var git tag v$npm_package_version",
+    "gpo": "git push origin master --tags",
+    "gpb": "git push bitbucket master --tags",
+    "deploy": "we deploy -p gte -v",
+    "standard": "standard"
   },
   "engines": {
-    "node": "8.10.0"
+    "node": "8.11.1"
   },
   "keywords": [
     "gerador",
@@ -33,6 +34,8 @@
     "pug": "^2.0.3"
   },
   "devDependencies": {
+    "cross-var-no-babel": "^1.2.0",
+    "nodemon": "^1.17.3",
     "standard": "^11.0.1"
   }
 }

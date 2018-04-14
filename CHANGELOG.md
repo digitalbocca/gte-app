@@ -2,7 +2,14 @@
 
 ## Gerador de Tags Exclusivas - App Frontend
 
-### v0.18.0
+### v0.19.0
+
+#### Notas da Versão v0.19.0
+
+- Atualizado CDN Bootstrap.
+- Correção no server.js para conformidade com JS Standard.
+- Atualizada a engine do node para v8.11.1.
+- Melhoria no sistema automatizado de Controle de Versão.
 
 #### Notas da Versão v0.18.0
 

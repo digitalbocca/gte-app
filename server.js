@@ -19,14 +19,16 @@
  * @version v1.2.0
  */
 
-const express = require('express')
-const pug = require('pug')
 const cors = require('cors')
+const express = require('express')
+const path = require('path')
 
 const app = express()
 
+require('pug')
+
 app.use(cors())
-app.use(express.static(__dirname + '/public'))
+app.use(express.static(path.join(__dirname, '/public')))
 
 app.set('views', './views')
 app.set('view engine', 'pug')

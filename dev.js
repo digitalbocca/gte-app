@@ -10,7 +10,7 @@
  *
  * @file dev.js
  * @namespace root
- * @description Inicia um servidor local de desenvolvimento na porta 3000.
+ * @description Inicia um servidor local de desenvolvimento na porta 8080.
  * @since v0.14.0
  *
  * @copyright (c)2017 - Estúdio Digital Bocca - https://estudiodigitalbocca.com.br/
@@ -20,6 +20,6 @@
  */
 
 process.env.PORT = 8080
-process.env.VER = 'v0.18.0'
+process.env.VER = 'v0.19.0'
 
 require('./server')
