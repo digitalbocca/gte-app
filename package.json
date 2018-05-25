@@ -1,6 +1,6 @@
 {
   "name": "geradordetags-producao",
-  "version": "0.19.0",
+  "version": "0.20.0",
   "description": "Gerador de Tags Exclusivas - Frontend",
   "main": "server.js",
   "config": {
@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "cross-var-no-babel": "^1.2.0",
-    "nodemon": "^1.17.3",
+    "nodemon": "^1.17.5",
     "standard": "^11.0.1"
   }
 }
