@@ -2,9 +2,11 @@
 
 ## Gerador de Tags Exclusivas - App Frontend
 
-### v0.20.0
+### v0.21.0
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/6acf83274edb76dfe6c7/maintainability)](https://codeclimate.com/github/digitalbocca/gte-app/maintainability)
+
+## LEGADO. ESTE PROGRAMA NÃO SERÁ ATUALIZADO
 
 Um gerador de tags exclusivas para seu canal no YouTube.
 
@@ -24,6 +26,8 @@ Tudo estará rodando em `<service>-<project>.wedeploy.io`.
 
 ## EXEMPLO
 
+### OS LINKS FORAM DESATIVADOS
+
 <https://app-gte.wedeploy.io>
 
 <https://gte.wedeploy.io>
@@ -31,6 +35,8 @@ Tudo estará rodando em `<service>-<project>.wedeploy.io`.
 <https://gte-app.ga>
 
 ## API QUE É UTILIZADA
+
+### ESTA API FOI DESATIVADA
 
 <https://api-geradordetags.wedeploy.io>
 

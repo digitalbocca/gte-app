@@ -2,7 +2,11 @@
 
 ## Gerador de Tags Exclusivas - App Frontend
 
-### v0.20.0
+### v0.21.0
+
+#### Notas da Versão v0.21.0
+
+- Enviado para o arquivo EDB.
 
 #### Notas da Versão v0.20.0
 
