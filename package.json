@@ -1,10 +1,10 @@
 {
   "name": "geradordetags-producao",
-  "version": "0.21.0",
+  "version": "0.21.1",
   "description": "Gerador de Tags Exclusivas - Frontend",
   "main": "server.js",
   "config": {
-    "commitMessage": "Enviado para o arquivo EDB"
+    "commitMessage": "Atualização de dependências com problemas de segurança"
   },
   "scripts": {
     "dev": "nodemon dev.js",
@@ -20,7 +20,7 @@
     "standard": "standard"
   },
   "engines": {
-    "node": "8.11.1"
+    "node": "10.15.3"
   },
   "keywords": [
     "gerador",
@@ -29,13 +29,13 @@
   "author": "Gabriel Bertola Bocca - gabriel@estudiodigitalbocca.com.br",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.4",
-    "express": "^4.16.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
     "pug": "^2.0.3"
   },
   "devDependencies": {
     "cross-var-no-babel": "^1.2.0",
-    "nodemon": "^1.17.5",
-    "standard": "^11.0.1"
+    "nodemon": "^1.18.10",
+    "standard": "^12.0.1"
   }
 }

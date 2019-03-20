@@ -13,13 +13,13 @@
  * @description Inicia um servidor local de desenvolvimento na porta 8080.
  * @since v0.14.0
  *
- * @copyright (c)2017 - Estúdio Digital Bocca - https://estudiodigitalbocca.com.br/
+ * @copyright (c)2017-2019 Estúdio Digital Bocca
  * @author Gabriel Bertola Bocca - gabriel at estudiodigitalbocca.com.br
  *
- * @version v1.2.0
+ * @version v1.3.0
  */
 
 process.env.PORT = 8080
-process.env.VER = 'v0.21.0'
+process.env.VER = 'v0.21.1'
 
 require('./server')
