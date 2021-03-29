@@ -20,6 +20,6 @@
  */
 
 process.env.PORT = 8080
-process.env.VER = 'v0.21.3'
+process.env.VER = 'v0.21.4'
 
 require('./server')

@@ -2,7 +2,7 @@
 
 ## Gerador de Tags Exclusivas - App Frontend
 
-### v0.21.3
+### v0.21.4
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/6acf83274edb76dfe6c7/maintainability)](https://codeclimate.com/github/digitalbocca/gte-app/maintainability)
 
@@ -54,4 +54,4 @@ Tudo estará rodando em `<service>-<project>.wedeploy.io`.
 
 - Veja no Arquivo CHANGELOG.md
 
->(c)2017-2020 Estúdio Digital Bocca
+>(c)2017-2021 Estúdio Digital Bocca

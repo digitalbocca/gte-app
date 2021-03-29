@@ -2,7 +2,11 @@
 
 ## Gerador de Tags Exclusivas - App Frontend
 
-### v0.21.3
+### v0.21.4
+
+#### Notas da Versão v0.21.4
+
+- Atualização de dependências com problemas de segurança.
 
 #### Notas da Versão v0.21.3
 
